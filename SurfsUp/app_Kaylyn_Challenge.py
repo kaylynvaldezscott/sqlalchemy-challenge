@@ -13,7 +13,7 @@ from flask import Flask, jsonify
 # Creating connection to Hawaii.sqlite file
 ############################################
 
-engine = create_engine("sqlite:///hawaii.sqlite")
+engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 Base = automap_base()
 
 Base.prepare(engine, reflect=True)
